@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Create Shapes!</h1>
+      <div class="row">
+        <input
+          type="text"
+          class="col-md-8 square-side"
+          placeholder="side length"
+        />
+        <button class="col-md-4 square-btn">Add Square</button>
+      </div>
+      <div class="row">
+        <input
+          type="text"
+          class="col-md-4 rectangle-height"
+          placeholder="height"
+        />
+        <input
+          type="text"
+          class="col-md-4 rectangle-width"
+          placeholder="width"
+        />
+        <button class="col-md-4 rectangle-btn">Add Rectangle</button>
+      </div>
+      <div class="row">
+        <input
+          type="text"
+          class="col-md-8 circle-radius"
+          placeholder="radius"
+        />
+        <button class="col-md-4 circle-btn">Add Circle</button>
+      </div>
+      <div class="row">
+        <input
+          type="text"
+          class="col-md-8 triangle-height"
+          placeholder="height"
+        />
+        <button class="col-md-4 triangle-btn">Add Triangle</button>
+      </div>
+      <div class="panel-container">
+        <div class="col-md-6" id="shape-container"></div>
+        <div class="sidepanel col-md-4">
+          <p>Shape Name: <span class="span-name"></span></p>
+          <p>Width: <span class="span-width"></span></p>
+          <p>Height: <span class="span-height"></span></p>
+          <p>Radius: <span class="span-radius"></span></p>
+          <p>Area: <span class="span-area"></span></p>
+          <p>Perimeter: <span class="span-perimeter"></span></p>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
